@@ -40,7 +40,7 @@ def send_wishes():
                 connection.login(user=my_email, password=password)
                 connection.sendmail(
                     from_addr=my_email,
-                    to_addrs="eriksonribeiro@hotmail.com",
+                    to_addrs=birthday['email'],
                     msg=f"Subject: Happy Birthday \n\n{letter}"
                 )
 
